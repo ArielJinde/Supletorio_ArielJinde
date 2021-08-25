@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "project_number": "977717225902",
+    "firebase_url": "https://proyectoweb-aea11-default-rtdb.firebaseio.com",
+    "project_id": "proyectoweb-aea11",
+    "storage_bucket": "proyectoweb-aea11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977717225902:android:3f1826954ad5c51fc8803f",
+        "android_client_info": {
+          "package_name": "arielfb.fisei.appfb3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEp0V5iQSz3NQEdXTrEvHPTEDc4zSoLwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977717225902:android:d9fd55f32a7e6182c8803f",
+        "android_client_info": {
+          "package_name": "arielfb.fisei.supletorio_arieljinde"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEp0V5iQSz3NQEdXTrEvHPTEDc4zSoLwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977717225902:android:4a714cf1d83183a6c8803f",
+        "android_client_info": {
+          "package_name": "com.trabajo.evaluacion2_parcial2_cordova_bryan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEp0V5iQSz3NQEdXTrEvHPTEDc4zSoLwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977717225902:android:f51454862c2270f3c8803f",
+        "android_client_info": {
+          "package_name": "com.trabajo.examensupletorio_bryan_cordova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEp0V5iQSz3NQEdXTrEvHPTEDc4zSoLwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977717225902:android:8c447ba7a7b6799bc8803f",
+        "android_client_info": {
+          "package_name": "com.trabajo.proyectomovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEp0V5iQSz3NQEdXTrEvHPTEDc4zSoLwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977717225902-72s7jfo4djf8rv9l9gvlhtasaignpl3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
