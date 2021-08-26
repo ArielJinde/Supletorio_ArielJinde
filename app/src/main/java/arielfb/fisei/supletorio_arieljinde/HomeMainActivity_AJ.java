@@ -79,6 +79,8 @@ public class HomeMainActivity_AJ extends AppCompatActivity {
 
         if (id == R.id.agregar_tarea){
             Toast.makeText(HomeMainActivity_AJ.this, "Opcion 1s", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(HomeMainActivity_AJ.this, CrearTarea_AJ.class);
+            startActivity(intent);
         }
         if (id == R.id.borrar_tareas){
             Toast.makeText(HomeMainActivity_AJ.this, "Opcion 1s", Toast.LENGTH_SHORT).show();
