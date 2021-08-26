@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Supletorio_ArielJinde">
-        <activity android:name=".HomeMainActivity_AJ"></activity>
+        <activity android:name=".CrearTarea_AJ"></activity>
+        <activity android:name=".HomeMainActivity_AJ" />
         <activity
             android:name=".MainActivity_AJ"
             android:exported="true">
