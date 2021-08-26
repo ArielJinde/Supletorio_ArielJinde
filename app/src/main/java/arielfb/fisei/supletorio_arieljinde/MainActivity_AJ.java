@@ -52,7 +52,9 @@ public class MainActivity_AJ extends AppCompatActivity {
 
                 if (firebaseAuth.getCurrentUser() != null) {
                     Intent intent = new Intent(MainActivity_AJ.this,HomeMainActivity_AJ.class);
-                    intent.putExtra("mail",editTextMail.getText().toString());
+                    intent.putExtra("id",editTextMail.getText().toString());
+
+                    startActivity(intent);
                     startActivity(intent);
 
                 } else

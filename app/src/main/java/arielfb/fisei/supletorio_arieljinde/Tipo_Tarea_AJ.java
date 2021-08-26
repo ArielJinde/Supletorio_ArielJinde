@@ -24,4 +24,9 @@ public class Tipo_Tarea_AJ {
     public void setDescripcion(int descripcion) {
         this.descripcion = descripcion;
     }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
 }

@@ -3,7 +3,6 @@ package arielfb.fisei.supletorio_arieljinde;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class HomeMainActivity_AJ extends AppCompatActivity {
     private DatabaseReference databaseReference;
     private DatabaseReference mDatabase;
-
+    private String nombre;
     TabLayout tabLayout;
     ViewPager viewPager;
     TabItem personal,bissnes;
@@ -31,6 +30,10 @@ public class HomeMainActivity_AJ extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_main_aj);
+
+
+
+
         databaseReference = FirebaseDatabase.getInstance().getReference();
         tabLayout = findViewById(R.id.tablayout_aj);
         viewPager =  findViewById(R.id.viewPager_aj);
@@ -78,8 +81,11 @@ public class HomeMainActivity_AJ extends AppCompatActivity {
         int id = menuItem.getItemId();
 
         if (id == R.id.agregar_tarea){
-            Toast.makeText(HomeMainActivity_AJ.this, "Opcion 1s", Toast.LENGTH_SHORT).show();
+            Bundle bundle = getIntent().getExtras();
+            nombre = bundle.getString("mail").toString();
+            Toast.makeText(HomeMainActivity_AJ.this, "Agregar"+nombre, Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(HomeMainActivity_AJ.this, CrearTarea_AJ.class);
+            intent.putExtra("id",nombre);
             startActivity(intent);
         }
         if (id == R.id.borrar_tareas){

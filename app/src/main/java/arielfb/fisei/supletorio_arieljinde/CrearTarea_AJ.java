@@ -7,10 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,6 +28,10 @@ public class CrearTarea_AJ extends AppCompatActivity {
     private Spinner spinnerUsuarios;
     private DatabaseReference databaseReference;
     private DatabaseReference mDatabase;
+    EditText tit;
+    EditText multi;
+    String nombre;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +40,11 @@ public class CrearTarea_AJ extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference();
         spinnerUsuarios = findViewById(R.id.spinnerUsuarios);
 
-        cargarCategoria();
+        tit = findViewById(R.id.editText_Titulo);
+        multi = findViewById(R.id.editTextDescripcion);
+
+
+        tipo_tarea_aj();
     }
 
     @Override
@@ -50,9 +58,26 @@ public class CrearTarea_AJ extends AppCompatActivity {
         int id = menuItem.getItemId();
 
         if (id == R.id.guardar){
-            Toast.makeText(CrearTarea_AJ.this, "Opcion 1s", Toast.LENGTH_SHORT).show();
+            Toast.makeText(CrearTarea_AJ.this, "Guardar", Toast.LENGTH_SHORT).show();
+
+
+            if(tit.getText()== " "){
+                Toast.makeText(CrearTarea_AJ.this, "lLENE LOS DATOS", Toast.LENGTH_SHORT).show();
+
+
+            }else{
+                Bundle bundle = getIntent().getExtras();
+                nombre = bundle.getString("mail").toString();
+                Tareas_AJ tar = new Tareas_AJ();
+
+                tar.setId(nombre);
+                tar.setTitulo();
+            }
+
         /*    Intent intent = new Intent(HomeMainActivity_AJ.this, CrearTarea_AJ.class);
             startActivity(intent);*/
+
+
         }
         if (id == R.id.cancelar){
             Toast.makeText(CrearTarea_AJ.this, "Opcion 1s", Toast.LENGTH_SHORT).show();
@@ -66,7 +91,7 @@ public class CrearTarea_AJ extends AppCompatActivity {
             return super.onOptionsItemSelected(menuItem);
     }
 
-    public void cargarCategoria() {
+    public void tipo_tarea_aj() {
         final List<Tipo_Tarea_AJ> categorias = new ArrayList<>();
         databaseReference.child("Tipo_Tarea").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
